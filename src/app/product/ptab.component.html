@@ -1,0 +1,33 @@
+
+<div [ngClass]="{'myclass':flag}">
+<h1>In ptab component</h1>
+Name : {{name}}
+salary : {{sal}}<br>
+{{"This is First Project.."}}
+
+<!--It takes names from .ts and put it into textbox--ngModel is built in module of of FormsModule-->
+<br><br>
+<button type="button" name="btn" (click)="changeFlag()">Click</button>
+{{flag}}
+<div *ngIf="flag">
+    <input type="text" name="nm" [(ngModel)]="name"> 
+</div>
+
+</div><br>
+
+******Using Object*******<br>
+{{ob.id}} {{ob.name}} {{ob.desg}} {{ob.dept}}<br><br>
+
+*****Using Array & ngFor****<br><br>
+<div *ngIf="flag">
+<table border=4 [ngClass]="{'myc1':flag1,'myc2':!flag1}">
+    <tr><th>Id</th><th>Name</th><th>Designation</th><th>Department</th></tr>
+    <tr *ngFor="let ob1 of arr">
+        <td>{{ob1.id}}</td>
+        <td>{{ob1.name}}</td>
+        <td>{{ob1.desg}}</td>
+        <td>{{ob1.dept}}</td>
+    </tr>
+</table>
+<pform></pform>
+</div>

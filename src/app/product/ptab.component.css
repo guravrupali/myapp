@@ -1,0 +1,14 @@
+h1{
+    color:red;
+}
+.myclass{
+    background-color: aqua;
+    border:3px solid brown;
+    border-radius: 6px;
+}
+.myc1{
+    background-color: lightcyan;
+}
+.myc2{
+    background-color:lime;
+}
